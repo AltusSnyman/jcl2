@@ -20,7 +20,7 @@ export default function QuoteClient() {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 border-b border-white/5 bg-jcl-veryDarkGreen relative overflow-hidden h-[50vh] min-h-[400px] flex items-center">
+            <section className="pt-20 pb-14 md:pt-32 md:pb-24 px-6 border-b border-white/5 bg-jcl-veryDarkGreen relative overflow-hidden min-h-[56vh] md:min-h-[50vh] flex items-center">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/quote/quote_page_hero_1771713090824.webp"

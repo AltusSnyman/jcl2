@@ -60,7 +60,7 @@ export default function Article2Client() {
             <Script id="howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
             {/* HERO */}
-            <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
+            <section className="relative h-[52vh] md:h-[65vh] min-h-[340px] md:min-h-[480px] flex items-end overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image src="/images/blog/ideas.webp" alt="Rural NZ property showcasing premier landscaping ideas" fill className="object-cover" priority sizes="100vw" />
                     <div className="absolute inset-0 bg-gradient-to-b from-jcl-background/60 via-transparent to-jcl-background/95" />

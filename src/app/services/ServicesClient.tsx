@@ -16,7 +16,7 @@ export default function ServicesClient() {
             <Navbar />
 
             {/* Page Hero */}
-            <section className="pt-32 pb-20 md:pt-48 md:pb-32 px-6 border-b border-white/5 bg-jcl-background relative overflow-hidden">
+            <section className="pt-20 pb-14 md:pt-32 md:pb-24 px-6 border-b border-white/5 bg-jcl-background relative overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/services/services_page_hero_1771711134447.webp"

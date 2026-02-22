@@ -77,7 +77,7 @@ export default function Article1Client() {
             <Script id="article1-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
             {/* HERO */}
-            <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
+            <section className="relative h-[52vh] md:h-[65vh] min-h-[340px] md:min-h-[480px] flex items-end overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image src="/images/blog/new-home.webp" alt="New lifestyle block home with beautifully landscaped grounds" fill className="object-cover" priority sizes="100vw" />
                     <div className="absolute inset-0 bg-gradient-to-b from-jcl-background/60 via-transparent to-jcl-background/95" />

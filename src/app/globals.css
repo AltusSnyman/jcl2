@@ -35,6 +35,11 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), Arial, Helvetica, sans-serif;
   @apply antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  touch-action: pan-x pan-y;
+  /* Prevent horizontal scroll on mobile */
+  overflow-x: hidden;
 }
 
 h1,
@@ -44,4 +49,22 @@ h4,
 h5,
 h6 {
   font-family: var(--font-heading), serif;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure fixed-position navbar clears the body on iOS */
+@supports (padding: max(0px)) {
+  .safe-top {
+    padding-top: max(1rem, env(safe-area-inset-top));
+  }
+}
+
+/* ≥44px tap targets for buttons and links */
+button,
+[role="button"] {
+  touch-action: manipulation;
 }

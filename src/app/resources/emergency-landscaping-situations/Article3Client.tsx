@@ -140,7 +140,7 @@ export default function Article3Client() {
             <Script id="article3-faq" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* HERO */}
-            <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
+            <section className="relative h-[52vh] md:h-[65vh] min-h-[340px] md:min-h-[480px] flex items-end overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image src="/images/blog/emergency.webp" alt="Collapsed retaining wall on a rural NZ property after heavy rain" fill className="object-cover" priority sizes="100vw" />
                     <div className="absolute inset-0 bg-gradient-to-b from-jcl-background/70 via-jcl-background/30 to-jcl-background/95" />
