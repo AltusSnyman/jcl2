@@ -96,6 +96,7 @@ const steps = [
         title: "Establish a Safety Exclusion Zone — Immediately",
         urgent: true,
         body: "The moment you identify a landscaping emergency — collapsed retaining wall, major slip, sink hole, or severe erosion threatening a structure — your first action must be to establish a clear safety exclusion zone. Tape off the area. Keep people, children, pets, and livestock well clear. Collapsed retaining walls and slips are not done moving — in the hours and days after an initial failure, adjacent sections of wall or slope will often follow. Do not approach the face of a failed wall. Do not attempt to stack temporary supports. Do not drive vehicles or machinery near a fresh slip. The priority is human safety, not damage minimisation. Take photos from a safe distance for your insurance claim. Note the time and any weather events that preceded the failure.",
+        links: [] as { label: string; href: string }[],
     },
     {
         icon: <PhoneCall className="w-6 h-6" />,
@@ -103,6 +104,7 @@ const steps = [
         title: "Notify Relevant Parties",
         urgent: false,
         body: "Depending on the nature and location of your emergency, you may need to notify multiple parties. If the failure has affected, or threatens to affect, a public road — notify Auckland Council (Rodney Local Board area) and the NZ Transport Agency if it's a state highway boundary. If it affects a neighbour's property, notify them immediately — you have a duty to warn. Contact your home or property insurer as soon as possible to lodge a preliminary claim — most insurers require prompt notification and photographed evidence before any remediation work begins. If the situation involves an immediate risk to a structure (house, shed) or is causing active flooding of a building, Auckland Council's 24hr emergency line is 09 301 0101.",
+        links: [] as { label: string; href: string }[],
     },
     {
         icon: <Clock className="w-6 h-6" />,
@@ -110,6 +112,7 @@ const steps = [
         title: "Get an Emergency Assessment — Within 24–48 Hours",
         urgent: false,
         body: "Once the immediate safety situation is stabilised and photos are taken, contact a qualified contractor for an emergency assessment as soon as possible. The purpose of the assessment is to understand the extent of the failure, what remediation is required, what temporary stabilisation is needed to prevent further movement, and whether there are any consent implications. JCL Projects provides emergency assessment consultations across the Kaukapakapa, Helensville, Kumeu, Wainui, Waitoki, and greater Rodney and North West Auckland area. We can typically mobilise for an on-site inspection within 24–48 hours for emergency situations.",
+        links: [{ label: "Contact JCL Projects", href: "/contact" }, { label: "Get a Free Quote", href: "/quote" }],
     },
     {
         icon: <CheckCircle2 className="w-6 h-6" />,
@@ -117,6 +120,7 @@ const steps = [
         title: "Temporary Stabilisation Before Repairs",
         urgent: false,
         body: "In the period between the emergency occurring and the full repair being completed — which may be days or weeks depending on material supply, consent processing, and contractor availability — temporary stabilisation is often required to prevent further movement. Depending on the nature of the failure, temporary measures might include: geofabric pinned over exposed soil to prevent further rain erosion, temporary drainage diversion to reduce hydrostatic pressure, or temporary earthworking to reduce the slope angle above a failed wall. Temporary measures are not a substitute for proper repair — they are a bridge to keep the situation from getting worse while the permanent solution is planned and consented.",
+        links: [{ label: "Bulk Earthworks", href: "/services/earthworks" }],
     },
     {
         icon: <CheckCircle2 className="w-6 h-6" />,
@@ -124,6 +128,7 @@ const steps = [
         title: "Plan & Execute Permanent Repairs",
         urgent: false,
         body: "The permanent repair phase should address not just the visible failure but the underlying cause. The most common underlying causes of retaining wall and slip failures in NZ are: inadequate drainage behind the wall (most common), over-steepened slope above the wall, wall constructed without adequate engineering for the height and loading, and deterioration of timber wall elements over time. JCL Projects designs permanent repairs that address the root cause — always including proper sub-surface drainage as a standard part of any retaining rebuild. Where a wall over 1.5m is required, we will advise on the consent process and can coordinate with a structural engineer for the engineering producer statement (PS1) required for consent.",
+        links: [{ label: "Retaining Walls & Terracing", href: "/services/retaining-walls" }, { label: "Bulk Earthworks", href: "/services/earthworks" }],
     },
 ];
 
@@ -209,7 +214,17 @@ export default function Article3Client() {
                                 )}
                             </div>
                             <div className="lg:col-span-9">
-                                <p className="text-[#F8FAFC]/65 font-body leading-relaxed">{step.body}</p>
+                                <p className="text-[#F8FAFC]/65 font-body leading-relaxed mb-5">{step.body}</p>
+                                {step.links.length > 0 && (
+                                    <div className="flex flex-wrap gap-3">
+                                        {step.links.map(l => (
+                                            <Link key={l.href} href={l.href}
+                                                className="inline-flex items-center gap-2 px-5 py-2.5 border border-jcl-limeAccent/30 text-jcl-limeAccent font-heading font-bold text-xs uppercase tracking-widest hover:bg-jcl-limeAccent/10 transition-colors duration-200">
+                                                {l.label} <ArrowRight className="w-3 h-3" />
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </motion.div>
                     ))}
@@ -242,7 +257,10 @@ export default function Article3Client() {
                             <PhoneCall className="w-4 h-4" /> Contact Us Now
                         </Link>
                         <Link href="/resources" className="px-8 py-4 border border-white/20 text-white font-heading font-bold uppercase tracking-widest hover:bg-white/10 transition-colors duration-300 whitespace-nowrap">
-                            More Articles
+                            More Guides
+                        </Link>
+                        <Link href="/services/retaining-walls" className="px-8 py-4 border border-jcl-limeAccent/30 text-jcl-limeAccent font-heading font-bold uppercase tracking-widest hover:bg-jcl-limeAccent/10 transition-colors duration-300 whitespace-nowrap">
+                            Retaining Walls
                         </Link>
                     </div>
                 </div>

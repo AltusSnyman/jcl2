@@ -35,39 +35,40 @@ const phases = [
         number: "01",
         title: "Site Assessment & Drainage Planning",
         body: "Before a single plant goes in or a wheel turns, a proper site assessment is the highest-value thing you can do. NZ soils — particularly the red clays common in Kaukapakapa, Helensville, and the broader Rodney district — are notoriously poor draining. A new build typically leaves the site compacted, stripped of topsoil, and vulnerable to erosion in the first wet season. Your first step should be walking the property after rainfall to understand where water runs. Note low points, damp patches, and any sloping that directs water toward the house, shed, or driveway. Map this before any landscaping work begins. Drainage infrastructure — subsoil drains, culverts, swales — needs to go in before anything else. It is far cheaper to do this once at the start than to rip up established plantings or a finished driveway later.",
-        services: [{ label: "Earthworks & Drainage", href: "/services" }, { label: "Site Consultation", href: "/quote" }],
+        services: [{ label: "Bulk Earthworks & Drainage", href: "/services/earthworks" }, { label: "Free Site Consultation", href: "/quote" }],
     },
     {
         number: "02",
         title: "Establish Your Access: Driveway & Tracks",
         body: "The driveway is the first landscaping feature that visitors and couriers interact with every single day, and it is the element that shapes everything else around it. A poorly built driveway on a lifestyle block quickly becomes a liability — potholes, rutting from heavy vehicles, stormwater damage, and muddied entries in winter. For rural properties, we recommend either a well-packed base metal driveway (75mm compacted depth minimum) or a chip-sealed sealed surface for high-traffic entranceways. The width matters too: lifestyle block driveways should be a minimum of 4m wide to allow two vehicles to pass, with 5–6m preferred near the entrance. If your property has a significant slope, proper drainage channels alongside the drive, and cross-fall grading to direct surface water off the driving surface, are non-negotiable. Internal farm tracks to sheds, paddocks, and further structures should also be planned at this stage — it is far more economical to build access tracks as part of a single land-shaping phase than to return with machinery later.",
-        services: [{ label: "Driveway Construction", href: "/services" }],
+        services: [{ label: "Driveway Construction", href: "/services/driveways" }],
     },
     {
         number: "03",
         title: "Earthworks & Level Platforms",
         body: "New builds in rural NZ often leave the surroundings in rough condition — stockpiled dirt, mulched tree stumps, builder's rubble, and uneven ground. The first landscaping earthwork phase is about establishing clean, level platforms and correct contours. For the house surround: identify what areas you want as flat lawn or garden, what should be terraced on a slope, and where any retaining structures will be needed. Getting earthworks right at this stage defines everything that follows. Cut and fill should be balanced on-site where possible — moving dirt around your own property rather than importing or exporting material saves significantly on costs. A bobcat or small excavator can typically prepare the house surround, establish initial garden bed levels, and rough-grade the lawn area in one to two days.",
-        services: [{ label: "Bulk Earthworks", href: "/services" }, { label: "Retaining Walls", href: "/services" }],
+        services: [{ label: "Bulk Earthworks", href: "/services/earthworks" }, { label: "Retaining Walls", href: "/services/retaining-walls" }],
     },
     {
         number: "04",
         title: "Retaining Walls & Terracing",
         body: "Sloped sites — which describe most rural Rodney district properties — require retaining walls to turn unusable incline into functional flat or gently graded areas. For the house garden zone: timber post retaining (H4-treated hardwood) is the most cost-effective for walls up to 1.2m. Above that, concrete block or engineered timber is preferred. For steep sections behind the house, or where the ground rises sharply from a driveway, a series of stepped retaining walls with planted terraces between them transforms a problematic slope into one of the most visually striking features of the property. Plan for sub-surface drainage behind every retaining wall — a perforated drain pipe at the base, wrapped in geofabric and backfilled with drainage metal — to prevent hydrostatic pressure building up behind the wall over time.",
-        services: [{ label: "Retaining Wall Construction", href: "/services" }],
+        services: [{ label: "Retaining Walls & Terracing", href: "/services/retaining-walls" }],
     },
     {
         number: "05",
         title: "Fencing: Boundaries, paddocks & Garden Zones",
         body: "Rural fencing serves multiple functions: keeping livestock in (or out of) specific areas, defining the garden zone from paddocks, creating wind protection, and forming the visual boundary of the property. For a new lifestyle block build, the minimum fencing work will typically be: a boundary fence along road frontage and neighbouring properties, garden exclusion fencing to keep livestock away from the house area, and internal paddock subdivision if running any grazing animals. Post and rail fencing is the most popular choice for rural aesthetics — typically 3 or 4 rails in roughsawn or treated timber, either left natural or stained. Electric tape in combination with a standard post and rail creates a practical livestock boundary at lower cost. Deer fencing and cattle fencing profiles differ — use species-appropriate wire gauge and post spacing for your livestock type.",
-        services: [{ label: "Rural Fencing", href: "/services" }],
+        services: [{ label: "Rural Fencing", href: "/services/rural-fencing" }],
     },
     {
         number: "06",
         title: "Topsoil, Lawn & Native Plantings",
         body: "Once the hard landscaping infrastructure is in place, you can focus on establishing living greenery. Most new builds will need topsoil imported or redistributed from on-site stockpiles to bring garden beds and lawn areas to correct levels. Aim for a minimum of 150mm of quality topsoil in lawn areas and 300mm+ in garden beds. For lawns on rural lifestyle blocks, a ryegrass and fescue mix is hardy for NZ conditions, or consider using lawn on high-visibility areas only and leaving paddock grasses to establish naturally elsewhere. For plantings along driveways, boundaries, and privacy zones, native NZ species are the lowest-maintenance option: harakeke (flax), tī kōuka (cabbage tree), kōwhai, mānuka, and native grasses like carex and poa species. These establish well in NZ conditions, require minimal irrigation once established, and provide excellent habitat value.",
-        services: [{ label: "Property Landscaping", href: "/landscaping" }],
+        services: [{ label: "Property Landscaping", href: "/services/landscaping" }, { label: "Landscaping Guide", href: "/landscaping" }],
     },
 ];
+
 
 export default function Article1Client() {
     return (
