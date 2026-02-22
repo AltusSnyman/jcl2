@@ -1,23 +1,28 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 const services = [
     {
-        title: "Custom-Built Sheds & Structures",
-        points: ["Pole sheds", "Custom rural sheds", "Horse truck sheds", "Outdoor entertainment structures"],
+        title: "Custom Pole Sheds",
+        points: ["Pole sheds", "Custom rural sheds", "Horse truck sheds", "Entertainment structures"],
         image: "/images/service-sheds.webp",
+        href: "/services/custom-sheds",
     },
     {
-        title: "Landscaping & Fencing",
-        points: ["Retaining walls", "Fencing & Gates", "Sloped yard transformations", "Rural property enhancements"],
+        title: "Retaining & Fencing",
+        points: ["Retaining walls & terracing", "Rural fencing & gates", "Sloped yard transforms", "Paddock subdivision"],
         image: "/images/service-landscaping.webp",
+        href: "/services/retaining-walls",
     },
     {
-        title: "Driveway & Entranceway",
-        points: ["Grand entranceways", "Driveway construction", "Property access improvements", "Precision earthworks"],
+        title: "Driveways & Earthworks",
+        points: ["Grand entranceways", "Driveway construction", "Bulk earthworks", "Site levelling & drainage"],
         image: "/images/service-driveways.webp",
+        href: "/services/driveways",
     }
 ];
 
@@ -27,9 +32,9 @@ export default function Services() {
             <div className="max-w-7xl mx-auto px-6">
 
                 <div className="flex flex-col mb-16 max-w-2xl">
-                    <span className="font-heading font-bold tracking-widest text-jcl-primary uppercase text-sm mb-4">What We're Great At</span>
+                    <span className="font-heading font-bold tracking-widest text-jcl-primary uppercase text-sm mb-4">What We&apos;re Great At</span>
                     <h2 className="font-heading font-black text-4xl md:text-6xl tracking-tighter uppercase leading-none">
-                        Precision & Care.
+                        Precision &amp; Care.
                     </h2>
                 </div>
 
@@ -52,12 +57,12 @@ export default function Services() {
                                 />
                             </div>
 
-                            <div className="p-8 flex flex-col h-full bg-jcl-veryDarkGreen text-white">
+                            <div className="p-8 flex flex-col flex-1 bg-jcl-veryDarkGreen text-white">
                                 <h3 className="font-heading font-bold text-2xl tracking-normal mb-6 text-jcl-limeAccent">
                                     {service.title}
                                 </h3>
 
-                                <ul className="flex flex-col gap-3 mt-auto">
+                                <ul className="flex flex-col gap-3 mb-8">
                                     {service.points.map((point, i) => (
                                         <li key={i} className="flex items-start gap-3">
                                             <div className="w-[6px] h-[6px] bg-white rounded-full mt-2 opacity-50 shrink-0" />
@@ -65,6 +70,11 @@ export default function Services() {
                                         </li>
                                     ))}
                                 </ul>
+
+                                <Link href={service.href}
+                                    className="mt-auto inline-flex items-center gap-2 text-jcl-limeAccent font-heading font-bold uppercase tracking-widest text-xs group-hover:gap-4 transition-all duration-300">
+                                    Full Details <ArrowRight className="w-3.5 h-3.5" />
+                                </Link>
                             </div>
                         </motion.div>
                     ))}
@@ -77,12 +87,12 @@ export default function Services() {
                     transition={{ duration: 0.8 }}
                     className="mt-16 text-center"
                 >
-                    <a href="/services" className="inline-block px-10 py-4 border-2 border-jcl-limeAccent text-jcl-limeAccent font-heading font-bold uppercase tracking-widest hover:bg-jcl-limeAccent hover:text-jcl-veryDarkGreen transition-colors duration-300 mr-4">
-                        View All Services Details
-                    </a>
-                    <a href="/quote" className="inline-block px-10 py-4 bg-jcl-limeAccent text-jcl-veryDarkGreen font-heading font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 mt-4 sm:mt-0">
+                    <Link href="/services" className="inline-block px-10 py-4 border-2 border-jcl-limeAccent text-jcl-limeAccent font-heading font-bold uppercase tracking-widest hover:bg-jcl-limeAccent hover:text-jcl-veryDarkGreen transition-colors duration-300 mr-4">
+                        View All Services
+                    </Link>
+                    <Link href="/quote" className="inline-block px-10 py-4 bg-jcl-limeAccent text-jcl-veryDarkGreen font-heading font-bold uppercase tracking-widest hover:bg-white transition-colors duration-300 mt-4 sm:mt-0">
                         Request a Quote
-                    </a>
+                    </Link>
                 </motion.div>
 
             </div>
