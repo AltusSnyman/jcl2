@@ -6,13 +6,17 @@ import "./globals.css";
 const cinzel = Cinzel({
   variable: "--font-cinzel",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "700", "900"],
+  display: "swap",
+  preload: true,
 });
 
 const josefinSans = Josefin_Sans({
   variable: "--font-josefin-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["300", "400", "600", "700"],
+  display: "swap",
+  preload: true,
 });
 
 const BASE_URL = "https://jclprojects.co.nz";
