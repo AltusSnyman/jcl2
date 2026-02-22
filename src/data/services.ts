@@ -25,7 +25,7 @@ export const services: ServiceData[] = [
         name: "Custom Pole Sheds & Structures",
         shortName: "Custom Sheds",
         tagline: "Purpose-Built Rural Structures That Last for Decades",
-        heroImage: "/images/services/service_shed_hero_1771710341768.webp",
+        heroImage: "/images/services/shed-hero-hq.jpg",
         heroAlt: "Custom pole shed built by JCL Projects on a rural Kaukapakapa property",
         metaDescription: "JCL Projects builds custom pole sheds and rural structures across Kaukapakapa, Helensville, Kumeu & North West Auckland. Free on-site quote. Heavy-duty materials, local expertise.",
         keywords: ["custom pole sheds Kaukapakapa", "rural sheds Helensville", "pole sheds Kumeu", "farm sheds Rodney", "custom rural buildings Auckland North West"],
@@ -56,8 +56,8 @@ export const services: ServiceData[] = [
         ],
         galleryImages: [
             { src: "/images/services/service_custom_rural_shed_1771712135171.webp", alt: "Custom rural shed JCL Projects" },
-            { src: "/images/services/service_horse_truck_shed_1771710450021.webp", alt: "Large horse truck shed with wide span access" },
-            { src: "/images/services/service_shed_hero_1771710341768.webp", alt: "Completed pole shed on a rural lifestyle block" },
+            { src: "/images/services/landscaping-hero-hq.jpg", alt: "Large horse truck shed with wide span access" },
+            { src: "/images/services/shed-hero-hq.jpg", alt: "Completed pole shed on a rural lifestyle block" },
         ],
         faq: [
             { q: "Does my shed need a building consent?", a: "Sheds under 10m² generally don't require consent. Larger sheds, or those within certain distances of property boundaries or other buildings, typically do. JCL Projects will advise on your specific situation during the site consultation." },
