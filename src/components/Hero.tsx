@@ -10,7 +10,7 @@ export default function Hero() {
             {/* Background Image — LCP element: priority + explicit sizes */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/hero-bg-new.jpg"
+                    src="/images/hero-bg-landscape.jpg"
                     alt="JCL Projects retaining wall earthworks construction in North West Auckland"
                     fill
                     priority
