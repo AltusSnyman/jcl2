@@ -25,7 +25,7 @@ export const services: ServiceData[] = [
         name: "Custom Pole Sheds & Structures",
         shortName: "Custom Sheds",
         tagline: "Purpose-Built Rural Structures That Last for Decades",
-        heroImage: "/images/services/service_shed_hero_1771710341768.webp",
+        heroImage: "/images/services/media__1771712056369.webp",
         heroAlt: "Custom pole shed built by JCL Projects on a rural Kaukapakapa property",
         metaDescription: "JCL Projects builds custom pole sheds and rural structures across Kaukapakapa, Helensville, Kumeu & North West Auckland. Free on-site quote. Heavy-duty materials, local expertise.",
         keywords: ["custom pole sheds Kaukapakapa", "rural sheds Helensville", "pole sheds Kumeu", "farm sheds Rodney", "custom rural buildings Auckland North West"],
