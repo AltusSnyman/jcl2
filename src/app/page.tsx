@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
 import About from "@/components/About";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
@@ -24,6 +25,7 @@ export default function Home() {
     <main className="min-h-screen bg-jcl-background text-jcl-foreground font-body">
       <Navbar />
       <Hero />
+      <TrustBar />
       <About />
       <Services />
       <Projects />

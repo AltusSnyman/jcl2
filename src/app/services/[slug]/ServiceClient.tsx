@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle2, ChevronRight, ChevronDown } from "lucide-react";
+import { ArrowRight, CheckCircle2, ChevronRight, ChevronDown, Shield } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
@@ -123,6 +123,26 @@ export default function ServiceClient({ service: svc }: Props) {
                         <div className="p-5 border border-white/10 bg-white/[0.02]">
                             <p className="text-white/50 font-heading font-bold uppercase tracking-widest text-xs mb-2">Service Areas</p>
                             <p className="text-white/75 font-body text-sm leading-relaxed">Kaukapakapa · Helensville · Wainui · Waitoki · Kumeu · Auckland North West</p>
+                        </div>
+                        {/* Trust Guarantee Panel */}
+                        <div className="p-5 border border-white/10 bg-white/[0.02]">
+                            <div className="flex items-center gap-2 mb-3">
+                                <Shield className="w-4 h-4 text-jcl-limeAccent" />
+                                <p className="text-white/50 font-heading font-bold uppercase tracking-widest text-xs">Our Guarantees</p>
+                            </div>
+                            <ul className="flex flex-col gap-2">
+                                {[
+                                    "Justin on-site personally",
+                                    "No sub-contracting",
+                                    "Workmanship backed",
+                                    "Transparent written quote",
+                                ].map((g) => (
+                                    <li key={g} className="flex items-center gap-2">
+                                        <CheckCircle2 className="w-3.5 h-3.5 text-jcl-limeAccent shrink-0" />
+                                        <span className="text-white/65 font-body text-xs leading-snug">{g}</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </div>
                         <Link href="/quote" className="w-full py-4 bg-jcl-limeAccent text-jcl-veryDarkGreen font-heading font-black uppercase tracking-widest text-sm hover:bg-white transition-colors duration-300 flex items-center justify-center gap-2">
                             Free On-Site Quote <ArrowRight className="w-4 h-4" />
