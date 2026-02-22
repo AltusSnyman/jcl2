@@ -55,7 +55,7 @@ const faqSchema = {
             name: "How quickly can JCL Projects respond to a landscaping emergency?",
             acceptedAnswer: {
                 "@type": "Answer",
-                text: "JCL Projects typically responds to emergency consultations within 24–48 hours across our service area (Kaukapakapa, Helensville, Kumeu, Wainui, Waitoki and greater North West Auckland). Emergency repair scoping and temporary stabilisation can begin within days depending on machinery availability. Contact us directly by phone for urgent situations.",
+                text: "For emergency situations, call JCL Projects directly on 021 327 729 — Justin will tell you his current availability and advise next steps immediately over the phone. For non-urgent assessments, message via the contact form and he'll reply when he's off the tools. Emergency repair scoping and temporary stabilisation timing depends on machinery availability and existing job commitments — call to get an honest answer on lead times.",
             },
         },
         {
@@ -109,9 +109,9 @@ const steps = [
     {
         icon: <Clock className="w-6 h-6" />,
         number: "03",
-        title: "Get an Emergency Assessment — Within 24–48 Hours",
+        title: "Get an Emergency Assessment — Call for Availability",
         urgent: false,
-        body: "Once the immediate safety situation is stabilised and photos are taken, contact a qualified contractor for an emergency assessment as soon as possible. The purpose of the assessment is to understand the extent of the failure, what remediation is required, what temporary stabilisation is needed to prevent further movement, and whether there are any consent implications. JCL Projects provides emergency assessment consultations across the Kaukapakapa, Helensville, Kumeu, Wainui, Waitoki, and greater Rodney and North West Auckland area. We can typically mobilise for an on-site inspection within 24–48 hours for emergency situations.",
+        body: "Once the immediate safety situation is stabilised and photos are taken, contact a qualified contractor for an emergency assessment as soon as possible. The assessment establishes the extent of the failure, what remediation is required, what temporary stabilisation is needed to prevent further movement, and whether there are consent implications. JCL Projects provides emergency assessment consultations across the Kaukapakapa, Helensville, Kumeu, Wainui, Waitoki, and greater Rodney and North West Auckland area. Call Justin directly on 021 327 729 to check availability — he'll give you an honest answer on how quickly he can get on site.",
         links: [{ label: "Contact JCL Projects", href: "/contact" }, { label: "Get a Free Quote", href: "/quote" }],
     },
     {
@@ -250,7 +250,7 @@ export default function Article3Client() {
                 <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                     <div>
                         <h2 className="font-heading font-black text-3xl uppercase text-white mb-2">Need Emergency Help?</h2>
-                        <p className="text-[#F8FAFC]/60 font-body">JCL Projects responds within 24–48 hours across the Rodney district and North West Auckland.</p>
+                        <p className="text-[#F8FAFC]/60 font-body">Call Justin directly on <a href="tel:+6421327729" className="text-jcl-limeAccent hover:underline">021 327 729</a> — he'll give you an honest availability timeline for the Rodney district and North West Auckland.</p>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
                         <Link href="/contact" className="px-8 py-4 bg-red-500 text-white font-heading font-black uppercase tracking-widest hover:bg-red-400 transition-colors duration-300 flex items-center gap-2 whitespace-nowrap">

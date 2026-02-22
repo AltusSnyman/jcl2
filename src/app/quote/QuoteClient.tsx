@@ -2,18 +2,39 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Calendar as CalendarIcon, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle2, MessageSquare, MapPin, Hammer } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useState } from "react";
+import Link from "next/link";
+
+const STEPS = [
+    {
+        icon: Phone,
+        step: "1",
+        title: "Call to Check Availability",
+        body: "Ring Justin on 021 327 729. He'll tell you straight away whether he has capacity in the coming weeks and whether your project is a good fit.",
+    },
+    {
+        icon: MapPin,
+        step: "2",
+        title: "Free On-Site Visit",
+        body: "Justin visits your property personally — no junior staff. He'll walk the site, understand the land, and ask the right questions before putting pen to paper.",
+    },
+    {
+        icon: MessageSquare,
+        step: "3",
+        title: "Clear Written Quote",
+        body: "You'll receive a transparent, itemised estimate. No vague ballparks — actual scope, materials, and a realistic timeline based on current workload.",
+    },
+    {
+        icon: Hammer,
+        step: "4",
+        title: "Project Gets Underway",
+        body: "Once you're happy, Justin confirms the start date and you're locked in. Work is done by him and a trusted small crew — not subcontracted out.",
+    },
+];
 
 export default function QuoteClient() {
-    // Generate dummy calendar days (current month)
-    const [selectedDate, setSelectedDate] = useState<number | null>(null);
-    const [selectedTime, setSelectedTime] = useState<string | null>(null);
-
-    const days = Array.from({ length: 31 }, (_, i) => i + 1);
-    const times = ["08:00 AM", "10:00 AM", "12:00 PM", "02:00 PM", "04:00 PM"];
 
     return (
         <div className="flex flex-col min-h-screen bg-jcl-background">
@@ -114,109 +135,58 @@ export default function QuoteClient() {
                         </motion.div>
                     </div>
 
-                    {/* Right Column: Calendar Scheduling */}
+                    {/* Right Column: How it works + Call CTA */}
                     <div className="lg:col-span-7">
                         <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="bg-white/[0.02] border border-white/10 p-8 md:p-12 relative overflow-hidden"
                         >
                             <h2 className="font-heading font-black text-3xl md:text-4xl uppercase text-white mb-8 flex items-center gap-4">
                                 <span className="flex-shrink-0 w-8 h-8 rounded-full bg-jcl-limeAccent text-jcl-veryDarkGreen flex items-center justify-center text-xl">2</span>
-                                Schedule Site Visit
+                                How it Works
                             </h2>
 
-                            <p className="text-[#F8FAFC]/70 font-body mb-8">
-                                Select a preferred date and time for Justin to visit your property and discuss your requirements.
-                            </p>
-
-                            {/* Dummy Calendar UI */}
-                            <div className="mb-10">
-                                <div className="flex items-center justify-between mb-4">
-                                    <h3 className="text-white font-heading font-bold text-xl uppercase tracking-wider flex items-center gap-2">
-                                        <CalendarIcon className="w-5 h-5 text-jcl-limeAccent" />
-                                        October 2024
-                                    </h3>
-                                    <div className="flex gap-2">
-                                        <button className="w-8 h-8 rounded border border-white/20 flex items-center justify-center text-white/50 hover:text-white hover:border-white/50 transition-colors">&lt;</button>
-                                        <button className="w-8 h-8 rounded border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors">&gt;</button>
-                                    </div>
-                                </div>
-
-                                <div className="grid grid-cols-7 gap-2 mb-2">
-                                    {['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'].map(day => (
-                                        <div key={day} className="text-center text-xs font-bold text-[#F8FAFC]/50 uppercase tracking-wider py-2">
-                                            {day}
+                            <div className="flex flex-col gap-6 mb-10">
+                                {STEPS.map((s) => (
+                                    <div key={s.step} className="flex gap-5 group">
+                                        <div className="flex-shrink-0 w-10 h-10 mt-0.5 bg-jcl-limeAccent/10 border border-jcl-limeAccent/20 flex items-center justify-center text-jcl-limeAccent group-hover:bg-jcl-limeAccent/20 transition-colors duration-200">
+                                            <s.icon className="w-5 h-5" />
                                         </div>
-                                    ))}
-                                </div>
-
-                                <div className="grid grid-cols-7 gap-2">
-                                    {/* Offset for start of month - dummy data */}
-                                    <div className="aspect-square opacity-0"></div>
-                                    <div className="aspect-square opacity-0"></div>
-
-                                    {days.map((day) => (
-                                        <button
-                                            key={day}
-                                            onClick={() => setSelectedDate(day)}
-                                            className={`
-                                                aspect-square flex items-center justify-center rounded-sm text-sm font-medium transition-all duration-200
-                                                ${selectedDate === day
-                                                    ? 'bg-jcl-limeAccent text-jcl-veryDarkGreen font-bold scale-105 shadow-[0_0_15px_rgba(204,255,0,0.3)]'
-                                                    : 'bg-white/5 text-white hover:bg-white/15'
-                                                }
-                                                ${(day === 12 || day === 15 || day === 22) ? 'border-b-2 border-red-500/50 opacity-50 cursor-not-allowed' : ''}
-                                            `}
-                                            disabled={(day === 12 || day === 15 || day === 22)}
-                                        >
-                                            {day}
-                                        </button>
-                                    ))}
-                                </div>
+                                        <div>
+                                            <p className="font-heading font-bold text-white uppercase tracking-wide text-sm mb-1">
+                                                {s.step}. {s.title}
+                                            </p>
+                                            <p className="text-[#F8FAFC]/60 font-body text-sm leading-relaxed">
+                                                {s.body}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
 
-                            {/* Time Selection */}
-                            <div className={`transition-all duration-500 ease-in-out overflow-hidden ${selectedDate ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
-                                <h3 className="text-white font-heading font-bold text-xl uppercase tracking-wider flex items-center gap-2 mb-4">
-                                    <Clock className="w-5 h-5 text-jcl-limeAccent" />
-                                    Available Times on Oct {selectedDate}
-                                </h3>
-                                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
-                                    {times.map((time) => (
-                                        <button
-                                            key={time}
-                                            onClick={() => setSelectedTime(time)}
-                                            className={`
-                                                py-3 border text-sm font-medium transition-all duration-200 uppercase tracking-wider
-                                                ${selectedTime === time
-                                                    ? 'bg-jcl-limeAccent border-jcl-limeAccent text-jcl-veryDarkGreen font-bold'
-                                                    : 'bg-transparent border-white/20 text-white hover:border-jcl-limeAccent/50'
-                                                }
-                                            `}
-                                        >
-                                            {time}
-                                        </button>
-                                    ))}
+                            {/* Primary CTA — call for instant availability */}
+                            <div className="bg-jcl-limeAccent p-7 flex flex-col sm:flex-row items-center gap-5">
+                                <div className="flex-1">
+                                    <p className="font-heading font-black text-jcl-veryDarkGreen text-xl uppercase tracking-tight mb-1">
+                                        Call for instant availability
+                                    </p>
+                                    <p className="text-jcl-veryDarkGreen/70 font-body text-sm">
+                                        Justin is one person — ringing is the fastest way to check his schedule.
+                                    </p>
                                 </div>
+                                <a
+                                    href="tel:+6421327729"
+                                    className="flex-shrink-0 min-h-[52px] px-7 py-3 bg-jcl-veryDarkGreen text-white font-heading font-black uppercase tracking-widest hover:bg-black transition-colors duration-200 flex items-center gap-2 text-sm"
+                                >
+                                    <Phone className="w-4 h-4" /> 021 327 729
+                                </a>
                             </div>
 
-                            {/* Submit Button */}
-                            <button
-                                disabled={!selectedDate || !selectedTime}
-                                className={`
-                                    w-full py-5 font-heading font-bold text-lg uppercase tracking-widest flex justify-center items-center gap-3 transition-all duration-300
-                                    ${selectedDate && selectedTime
-                                        ? 'bg-jcl-limeAccent text-jcl-veryDarkGreen hover:bg-white cursor-pointer'
-                                        : 'bg-white/10 text-white/30 cursor-not-allowed'
-                                    }
-                                `}
-                            >
-                                <span>Confirm Booking request</span>
-                                {selectedDate && selectedTime ? <CheckCircle2 className="w-5 h-5" /> : <ArrowRight className="w-5 h-5" />}
-                            </button>
+                            <p className="text-[#F8FAFC]/40 font-body text-xs mt-4">
+                                Prefer to send your project details first? Fill in the form on the left and Justin will reply when he&apos;s off the tools.
+                            </p>
 
                         </motion.div>
                     </div>

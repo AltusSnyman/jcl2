@@ -116,7 +116,7 @@ export default function ContactClient() {
                                     Send a Message.
                                 </h2>
                                 <p className="text-[#F8FAFC]/70 font-body text-lg">
-                                    Fill out the form below and we'll get back to you within 24 hours. For an immediate quote, <a href="/quote" className="text-jcl-limeAccent hover:underline">click here</a>.
+                                    Justin reads every message personally. Reply times vary — call <a href="tel:+6421327729" className="text-jcl-limeAccent hover:underline font-semibold">021 327 729</a> for an immediate availability check.
                                 </p>
                             </div>
 
