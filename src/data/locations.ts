@@ -52,6 +52,8 @@ export const locations: LocationData[] = [
             { q: "Does JCL Projects work in Kaukapakapa?", a: "Yes — Kaukapakapa is in the heart of our service area. Justin lives and works in the Rodney district and has completed projects throughout the area." },
             { q: "How do you handle the clay soil conditions in Kaukapakapa?", a: "We integrate sub-surface drainage into every project — perforated drain pipes behind retaining walls, correctly graded driveways, and culverts at low points in the landscape. No project leaves without a plan for managing the wet season." },
             { q: "How far in advance do I need to book?", a: "Typically 4–8 weeks for a site consultation and quote. Major project start dates depend on current workload. Contact us to discuss your timeline." },
+            { q: "Do retaining walls near Kaukapakapa require building consent?", a: "Timber retaining walls up to 1.5m in height generally do not require a building consent under the Auckland Unitary Plan — but site-specific factors such as proximity to boundaries and drainage onto neighbouring properties can change this. JCL Projects will advise during your site consultation." },
+            { q: "What does a driveway typically cost in the Kaukapakapa area?", a: "Driveway costs vary widely depending on length, access conditions, and required preparation. A standard rural driveway in the Kaukapakapa area starts from around $8,000 for a short run and can exceed $60,000 for a long rural access track requiring significant earthworks and culverts. Call Justin for an on-site assessment and accurate quote." },
         ],
     },
     {
@@ -86,6 +88,8 @@ export const locations: LocationData[] = [
             { q: "Does JCL Projects cover Helensville and surrounding areas?", a: "Yes — Helensville is one of our primary service areas. We do regular project work throughout the Helensville rural catchment and the surrounding communities of Parakai, Shelly Beach, South Head, and Glorit." },
             { q: "Can you work on both hill country and river flat properties near Helensville?", a: "Absolutely. We regularly work on both — steep hill country earthworks and retaining east of town, and drainage-focused landscaping on the river flat and harbour-edge properties. The challenges are different but both are well within our expertise." },
             { q: "How does council consent work for landscaping near the Kaipara coastal zone?", a: "Properties in the Kaipara coastal environment zone may have additional Auckland Unitary Plan requirements for earthworks and vegetation clearance. JCL Projects can advise on consent triggers and work with owners through the process." },
+            { q: "Can you help with drainage issues on a low-lying Helensville property?", a: "Yes — drainage is one of our core specialities on river flat and low-lying harbour-edge properties near Helensville. We design and install sub-surface drainage, swales, culverts, and correctly graded surfaces to manage water in wet season conditions." },
+            { q: "What services does JCL Projects provide in Helensville?", a: "We provide earthworks, retaining walls, driveway construction, rural fencing, and custom pole shed builds throughout the Helensville area. On-site consultations are free. Call Justin on 021 327 729 to discuss your project." },
         ],
     },
     {
@@ -120,6 +124,8 @@ export const locations: LocationData[] = [
             { q: "Do you work in Wainui?", a: "Yes — Wainui is within our regular service area. We complete projects throughout the Wainui, Dairy Flat, and Silverdale North areas regularly." },
             { q: "My property is a new lifestyle block build with bare ground — can you help?", a: "This is exactly our specialty. We can take a new build site from bare post-construction ground to a fully landscaped property — driveway, platforms, retaining, fencing, lawn, and plantings — as a complete project." },
             { q: "What's the process for getting a quote in Wainui?", a: "Contact us via our quote page or phone, and we'll arrange a free on-site consultation. Justin visits every site personally before quoting." },
+            { q: "Do you need resource consent for earthworks in Wainui near the urban growth boundary?", a: "Possibly. Properties near the Auckland urban growth boundary may have Auckland Unitary Plan earthworks provisions that require consent for significant cut and fill. JCL Projects will identify consent requirements during the site assessment and advise accordingly." },
+            { q: "Can you build retaining walls on a sloped Wainui section?", a: "Yes — retaining walls on sloped Wainui lifestyle blocks are a regular project type for us. We assess wall height, soil conditions, and drainage requirements on site and specify the correct material and design for your situation." },
         ],
     },
     {
@@ -154,6 +160,8 @@ export const locations: LocationData[] = [
             { q: "Does JCL Projects work in Waitoki and the surrounding hill country?", a: "Yes — hill country work in the Waitoki, Hoteo, and Makarau areas is a core part of our service offering. Justin has extensive experience with steep terrain earthworks and retaining in this area." },
             { q: "How do you manage earthworks on steep Waitoki properties?", a: "Carefully. We plan earthworks in stages timed around dry weather windows, install erosion control measures during construction, and design finished platforms with engineered drainage. We match equipment size to site access and terrain." },
             { q: "Can you build a shed platform on a steep section?", a: "Yes — creating level shed platforms by cut and fill or fill with compaction on steep Waitoki sites is something we do regularly. The earthworks and shed can be scoped as one combined project." },
+            { q: "How do you get machinery to remote Waitoki properties?", a: "JCL Projects operates equipment sized for rural Rodney access — Justin knows the local road network and weight-limited bridges intimately. We plan machinery movements around dry weather windows and, where access is very tight, select smaller equipment that can still complete the work effectively." },
+            { q: "Do retaining walls in Waitoki require building consent?", a: "Retaining walls under 1.5m in height generally do not require a building consent. On steep Waitoki sites where walls need to be taller or are close to property boundaries or structures, a consent may be required. JCL Projects can advise on this during the on-site assessment." },
         ],
     },
     {
@@ -188,6 +196,8 @@ export const locations: LocationData[] = [
             { q: "Does JCL Projects work in Kumeu and Huapai?", a: "Yes — Kumeu, Huapai, Riverhead, Coatesville, and Waimauku are all within our regular service area. The Kumeu corridor is one of our most active markets." },
             { q: "I have a premium new build and need high-quality landscaping to match. Can you do that?", a: "This is what JCL Projects specialises in. Justin personally oversees every project, and in the Kumeu market specifically we are used to working to a premium standard. Request a site consultation and we'll discuss what's possible for your property." },
             { q: "Can you build a driveway with stone pillars and post-and-rail fencing as a complete package?", a: "Yes — complete driveway packages including earthworks, surface, pillars, fencing, and flanking plantings are one of our most popular project types in the Kumeu area." },
+            { q: "How much does landscaping typically cost on a Kumeu lifestyle block?", a: "Project costs depend heavily on scope and site conditions. A complete driveway with post-and-rail typically ranges from $15,000 to $45,000+. Full new build landscaping packages (earthworks, retaining, driveway, fencing, lawn) for larger Kumeu properties frequently range from $60,000 to $150,000+. JCL Projects provides itemised, transparent quotes — there are no surprises. Call Justin to arrange an on-site assessment." },
+            { q: "Do you source quality topsoil and mulch for Kumeu garden plantings?", a: "Yes. Where required, we coordinate the supply of screened topsoil, composts, and mulch for garden establishment as part of the project scope. We use trusted local suppliers and specify material quality appropriate for the application." },
         ],
     },
     {
@@ -222,6 +232,8 @@ export const locations: LocationData[] = [
             { q: "What areas does JCL Projects service in Auckland North West?", a: "We cover the full North West corridor from Kumeu and Riverhead in the south through to Helensville and Kaukapakapa in the north, including Waimauku, Taupaki, Wainui, Waitoki, Parakai, and surrounding areas. If you're unsure if we cover your location, contact us — we'll let you know." },
             { q: "How long has JCL Projects been working in Auckland North West?", a: "Since the business began in 2019. The North West is our home territory and the area where the vast majority of our work is concentrated. We have extensive local knowledge of the terrain, soil conditions, and council requirements throughout the region." },
             { q: "Can you handle large-scale property development landscaping?", a: "Yes. JCL Projects has the equipment, capacity, and experience to handle large-scale rural landscaping projects — from total site preparation for new builds to complex retaining and earthworks on established properties. Contact us to discuss your project scope." },
+            { q: "Is JCL Projects owner-operated or do you use subcontractors?", a: "JCL Projects is fully owner-operated. Justin manages and works on every project personally, supported by a trusted small crew. We do not subcontract work out. This is why clients across Auckland North West trust us to deliver consistent quality — the same person who quotes the job does the work." },
+            { q: "How do clay soils across Auckland North West affect landscaping projects?", a: "Clay soils are the dominant soil type throughout the Auckland North West corridor and they affect every project. They drain slowly, swell when wet, and can destabilise slopes if earthworks are not managed correctly. Every JCL Projects design integrates sub-surface drainage appropriate to the clay conditions on site. We do not treat drainage as an optional extra — it is a fundamental part of every project." },
         ],
     },
 ];
