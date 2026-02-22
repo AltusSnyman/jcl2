@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   images: {
     // Serve responsive WebP at tighter quality thresholds for smaller payloads
-    qualities: [60, 80, 100],
+    qualities: [60, 80, 85, 100],
     // Limit srcset sizes to what we actually use — avoids generating unnecessary variants
     deviceSizes: [640, 768, 1080, 1280, 1920],
     imageSizes: [128, 256, 384],
