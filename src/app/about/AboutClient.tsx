@@ -36,7 +36,7 @@ export default function AboutClient() {
 
             {/* Page Hero */}
             <section className="pt-20 pb-14 md:pt-32 md:pb-24 px-6 border-b border-white/5 bg-jcl-veryDarkGreen relative overflow-hidden min-h-[65vmax] md:min-h-[60vh] max-h-[80vh] flex items-center">
-                <div className="absolute inset-0 opacity-20 bg-[url('/images/noise.png')] mix-blend-overlay pointer-events-none z-0"></div>
+                <div className="absolute inset-0 bg-jcl-veryDarkGreen/60 z-0"></div>
                 <div className="max-w-7xl mx-auto w-full relative z-10 flex flex-col items-center text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}

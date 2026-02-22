@@ -79,7 +79,7 @@ export default function ServiceClient({ service: svc }: Props) {
             <section className="relative h-[52vh] md:h-[65vh] min-h-[360px] md:min-h-[480px] flex items-end overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image src={svc.heroImage} alt={svc.heroAlt} fill className="object-cover" priority sizes="100vw" />
-                    <div className="absolute inset-0 bg-gradient-to-b from-jcl-background/40 via-transparent to-jcl-background/95" />
+                    <div className="absolute inset-0 bg-jcl-veryDarkGreen/60" />
                 </div>
                 <div className="relative z-10 max-w-6xl mx-auto px-6 pb-20 w-full">
                     <motion.div initial="hidden" animate="visible" variants={fadeUp}>

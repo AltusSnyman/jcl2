@@ -50,7 +50,7 @@ export default function QuoteClient() {
                         className="object-cover opacity-60"
                         priority
                     />
-                    <div className="absolute inset-0 bg-jcl-veryDarkGreen/60 mix-blend-multiply" />
+                    <div className="absolute inset-0 bg-jcl-veryDarkGreen/60" />
                 </div>
                 <div className="max-w-7xl mx-auto w-full relative z-10 text-center">
                     <motion.div
